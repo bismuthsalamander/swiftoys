@@ -1,0 +1,625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05660C822C63F20400A44355 /* KayfabeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05660C812C63F20400A44355 /* KayfabeApp.swift */; };
+		05660C842C63F20400A44355 /* KayfabeMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05660C832C63F20400A44355 /* KayfabeMainView.swift */; };
+		05660C862C63F20500A44355 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05660C852C63F20500A44355 /* Assets.xcassets */; };
+		05660C892C63F20500A44355 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05660C882C63F20500A44355 /* Preview Assets.xcassets */; };
+		05660C932C63F20600A44355 /* KayfabeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05660C922C63F20600A44355 /* KayfabeTests.swift */; };
+		05660C9D2C63F20600A44355 /* KayfabeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05660C9C2C63F20600A44355 /* KayfabeUITests.swift */; };
+		05660C9F2C63F20600A44355 /* KayfabeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05660C9E2C63F20600A44355 /* KayfabeUITestsLaunchTests.swift */; };
+		05660CAC2C63F3D100A44355 /* KayfabeCryptViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05660CAB2C63F3D100A44355 /* KayfabeCryptViewModel.swift */; };
+		05660CB42C640F4E00A44355 /* FridaGadget.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 05660CB32C640F4E00A44355 /* FridaGadget.dylib */; };
+		05660CB52C640F5300A44355 /* FridaGadget.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 05660CB32C640F4E00A44355 /* FridaGadget.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		05660C8F2C63F20600A44355 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05660C762C63F20400A44355 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05660C7D2C63F20400A44355;
+			remoteInfo = Kayfabe;
+		};
+		05660C992C63F20600A44355 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05660C762C63F20400A44355 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05660C7D2C63F20400A44355;
+			remoteInfo = Kayfabe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		05660CB22C640ECB00A44355 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				05660CB52C640F5300A44355 /* FridaGadget.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		05660C7E2C63F20400A44355 /* Kayfabe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kayfabe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05660C812C63F20400A44355 /* KayfabeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KayfabeApp.swift; sourceTree = "<group>"; };
+		05660C832C63F20400A44355 /* KayfabeMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KayfabeMainView.swift; sourceTree = "<group>"; };
+		05660C852C63F20500A44355 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		05660C882C63F20500A44355 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		05660C8E2C63F20600A44355 /* KayfabeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KayfabeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05660C922C63F20600A44355 /* KayfabeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KayfabeTests.swift; sourceTree = "<group>"; };
+		05660C982C63F20600A44355 /* KayfabeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KayfabeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05660C9C2C63F20600A44355 /* KayfabeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KayfabeUITests.swift; sourceTree = "<group>"; };
+		05660C9E2C63F20600A44355 /* KayfabeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KayfabeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		05660CAB2C63F3D100A44355 /* KayfabeCryptViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KayfabeCryptViewModel.swift; sourceTree = "<group>"; };
+		05660CB32C640F4E00A44355 /* FridaGadget.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = FridaGadget.dylib; sourceTree = "<group>"; };
+		05660CB62C65324200A44355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05660C7B2C63F20400A44355 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05660CB42C640F4E00A44355 /* FridaGadget.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05660C8B2C63F20600A44355 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05660C952C63F20600A44355 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05660C752C63F20400A44355 = {
+			isa = PBXGroup;
+			children = (
+				05660C802C63F20400A44355 /* Kayfabe */,
+				05660C912C63F20600A44355 /* KayfabeTests */,
+				05660C7F2C63F20400A44355 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		05660C7F2C63F20400A44355 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05660C7E2C63F20400A44355 /* Kayfabe.app */,
+				05660C8E2C63F20600A44355 /* KayfabeTests.xctest */,
+				05660C982C63F20600A44355 /* KayfabeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05660C802C63F20400A44355 /* Kayfabe */ = {
+			isa = PBXGroup;
+			children = (
+				05660CB62C65324200A44355 /* Info.plist */,
+				05660C812C63F20400A44355 /* KayfabeApp.swift */,
+				05660CB32C640F4E00A44355 /* FridaGadget.dylib */,
+				05660C832C63F20400A44355 /* KayfabeMainView.swift */,
+				05660C9B2C63F20600A44355 /* KayfabeUITests */,
+				05660C872C63F20500A44355 /* Preview Content */,
+				05660CAB2C63F3D100A44355 /* KayfabeCryptViewModel.swift */,
+			);
+			path = Kayfabe;
+			sourceTree = "<group>";
+		};
+		05660C872C63F20500A44355 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				05660C882C63F20500A44355 /* Preview Assets.xcassets */,
+				05660C852C63F20500A44355 /* Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		05660C912C63F20600A44355 /* KayfabeTests */ = {
+			isa = PBXGroup;
+			children = (
+				05660C922C63F20600A44355 /* KayfabeTests.swift */,
+			);
+			path = KayfabeTests;
+			sourceTree = "<group>";
+		};
+		05660C9B2C63F20600A44355 /* KayfabeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				05660C9C2C63F20600A44355 /* KayfabeUITests.swift */,
+				05660C9E2C63F20600A44355 /* KayfabeUITestsLaunchTests.swift */,
+			);
+			path = KayfabeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		05660C7D2C63F20400A44355 /* Kayfabe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05660CA22C63F20600A44355 /* Build configuration list for PBXNativeTarget "Kayfabe" */;
+			buildPhases = (
+				05660C7A2C63F20400A44355 /* Sources */,
+				05660C7B2C63F20400A44355 /* Frameworks */,
+				05660C7C2C63F20400A44355 /* Resources */,
+				05660CB22C640ECB00A44355 /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kayfabe;
+			productName = Kayfabe;
+			productReference = 05660C7E2C63F20400A44355 /* Kayfabe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		05660C8D2C63F20600A44355 /* KayfabeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05660CA52C63F20600A44355 /* Build configuration list for PBXNativeTarget "KayfabeTests" */;
+			buildPhases = (
+				05660C8A2C63F20600A44355 /* Sources */,
+				05660C8B2C63F20600A44355 /* Frameworks */,
+				05660C8C2C63F20600A44355 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05660C902C63F20600A44355 /* PBXTargetDependency */,
+			);
+			name = KayfabeTests;
+			productName = KayfabeTests;
+			productReference = 05660C8E2C63F20600A44355 /* KayfabeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		05660C972C63F20600A44355 /* KayfabeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05660CA82C63F20600A44355 /* Build configuration list for PBXNativeTarget "KayfabeUITests" */;
+			buildPhases = (
+				05660C942C63F20600A44355 /* Sources */,
+				05660C952C63F20600A44355 /* Frameworks */,
+				05660C962C63F20600A44355 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05660C9A2C63F20600A44355 /* PBXTargetDependency */,
+			);
+			name = KayfabeUITests;
+			productName = KayfabeUITests;
+			productReference = 05660C982C63F20600A44355 /* KayfabeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		05660C762C63F20400A44355 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					05660C7D2C63F20400A44355 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					05660C8D2C63F20600A44355 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 05660C7D2C63F20400A44355;
+					};
+					05660C972C63F20600A44355 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 05660C7D2C63F20400A44355;
+					};
+				};
+			};
+			buildConfigurationList = 05660C792C63F20400A44355 /* Build configuration list for PBXProject "Kayfabe" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 05660C752C63F20400A44355;
+			productRefGroup = 05660C7F2C63F20400A44355 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				05660C7D2C63F20400A44355 /* Kayfabe */,
+				05660C8D2C63F20600A44355 /* KayfabeTests */,
+				05660C972C63F20600A44355 /* KayfabeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05660C7C2C63F20400A44355 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05660C892C63F20500A44355 /* Preview Assets.xcassets in Resources */,
+				05660C862C63F20500A44355 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05660C8C2C63F20600A44355 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05660C962C63F20600A44355 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05660C7A2C63F20400A44355 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05660C842C63F20400A44355 /* KayfabeMainView.swift in Sources */,
+				05660C822C63F20400A44355 /* KayfabeApp.swift in Sources */,
+				05660CAC2C63F3D100A44355 /* KayfabeCryptViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05660C8A2C63F20600A44355 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05660C932C63F20600A44355 /* KayfabeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05660C942C63F20600A44355 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05660C9F2C63F20600A44355 /* KayfabeUITestsLaunchTests.swift in Sources */,
+				05660C9D2C63F20600A44355 /* KayfabeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05660C902C63F20600A44355 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05660C7D2C63F20400A44355 /* Kayfabe */;
+			targetProxy = 05660C8F2C63F20600A44355 /* PBXContainerItemProxy */;
+		};
+		05660C9A2C63F20600A44355 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05660C7D2C63F20400A44355 /* Kayfabe */;
+			targetProxy = 05660C992C63F20600A44355 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05660CA02C63F20600A44355 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		05660CA12C63F20600A44355 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		05660CA32C63F20600A44355 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Kayfabe/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Kayfabe/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Kayfabe",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.cliffsmith.youfail.Kayfabe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		05660CA42C63F20600A44355 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Kayfabe/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Kayfabe/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Kayfabe",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.cliffsmith.youfail.Kayfabe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		05660CA62C63F20600A44355 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.cliffsmith.youfail.KayfabeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kayfabe.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Kayfabe";
+			};
+			name = Debug;
+		};
+		05660CA72C63F20600A44355 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.cliffsmith.youfail.KayfabeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kayfabe.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Kayfabe";
+			};
+			name = Release;
+		};
+		05660CA92C63F20600A44355 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.cliffsmith.youfail.KayfabeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Kayfabe;
+			};
+			name = Debug;
+		};
+		05660CAA2C63F20600A44355 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.cliffsmith.youfail.KayfabeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Kayfabe;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05660C792C63F20400A44355 /* Build configuration list for PBXProject "Kayfabe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05660CA02C63F20600A44355 /* Debug */,
+				05660CA12C63F20600A44355 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05660CA22C63F20600A44355 /* Build configuration list for PBXNativeTarget "Kayfabe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05660CA32C63F20600A44355 /* Debug */,
+				05660CA42C63F20600A44355 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05660CA52C63F20600A44355 /* Build configuration list for PBXNativeTarget "KayfabeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05660CA62C63F20600A44355 /* Debug */,
+				05660CA72C63F20600A44355 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05660CA82C63F20600A44355 /* Build configuration list for PBXNativeTarget "KayfabeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05660CA92C63F20600A44355 /* Debug */,
+				05660CAA2C63F20600A44355 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 05660C762C63F20400A44355 /* Project object */;
+}
