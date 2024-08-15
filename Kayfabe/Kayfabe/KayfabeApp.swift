@@ -2,8 +2,6 @@
 //  KayfabeApp.swift
 //  Kayfabe
 //
-//  Created by Cliff Smith on 8/7/24.
-//
 
 import SwiftUI
 

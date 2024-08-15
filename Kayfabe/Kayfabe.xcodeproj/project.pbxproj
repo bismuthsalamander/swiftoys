@@ -15,8 +15,6 @@
 		05660C9D2C63F20600A44355 /* KayfabeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05660C9C2C63F20600A44355 /* KayfabeUITests.swift */; };
 		05660C9F2C63F20600A44355 /* KayfabeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05660C9E2C63F20600A44355 /* KayfabeUITestsLaunchTests.swift */; };
 		05660CAC2C63F3D100A44355 /* KayfabeCryptViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05660CAB2C63F3D100A44355 /* KayfabeCryptViewModel.swift */; };
-		05660CB42C640F4E00A44355 /* FridaGadget.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 05660CB32C640F4E00A44355 /* FridaGadget.dylib */; };
-		05660CB52C640F5300A44355 /* FridaGadget.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 05660CB32C640F4E00A44355 /* FridaGadget.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,20 +34,6 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		05660CB22C640ECB00A44355 /* Embed Libraries */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				05660CB52C640F5300A44355 /* FridaGadget.dylib in Embed Libraries */,
-			);
-			name = "Embed Libraries";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		05660C7E2C63F20400A44355 /* Kayfabe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kayfabe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05660C812C63F20400A44355 /* KayfabeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KayfabeApp.swift; sourceTree = "<group>"; };
@@ -64,6 +48,7 @@
 		05660CAB2C63F3D100A44355 /* KayfabeCryptViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KayfabeCryptViewModel.swift; sourceTree = "<group>"; };
 		05660CB32C640F4E00A44355 /* FridaGadget.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = FridaGadget.dylib; sourceTree = "<group>"; };
 		05660CB62C65324200A44355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		05D90E612C6D5C8600265E32 /* Kayfabe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Kayfabe.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +56,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05660CB42C640F4E00A44355 /* FridaGadget.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +98,7 @@
 		05660C802C63F20400A44355 /* Kayfabe */ = {
 			isa = PBXGroup;
 			children = (
+				05D90E612C6D5C8600265E32 /* Kayfabe.entitlements */,
 				05660CB62C65324200A44355 /* Info.plist */,
 				05660C812C63F20400A44355 /* KayfabeApp.swift */,
 				05660CB32C640F4E00A44355 /* FridaGadget.dylib */,
@@ -161,7 +146,6 @@
 				05660C7A2C63F20400A44355 /* Sources */,
 				05660C7B2C63F20400A44355 /* Frameworks */,
 				05660C7C2C63F20400A44355 /* Resources */,
-				05660CB22C640ECB00A44355 /* Embed Libraries */,
 			);
 			buildRules = (
 			);
@@ -445,6 +429,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Kayfabe/Kayfabe.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Kayfabe/Preview Content\"";
@@ -456,6 +441,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -479,6 +465,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Kayfabe/Kayfabe.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Kayfabe/Preview Content\"";
@@ -490,6 +477,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

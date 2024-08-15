@@ -4,7 +4,16 @@
 <dict>
 	<key>CFBundleURLTypes</key>
 	<array>
-		<dict/>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.cliffsmith.youfail.kayfabe</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>kayfabeurlscheme</string>
+			</array>
+		</dict>
 	</array>
 </dict>
 </plist>

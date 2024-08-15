@@ -2,59 +2,41 @@
 //  ContentView.swift
 //  Kayfabe
 //
-//  Created by Cliff Smith on 8/7/24.
-//
 
 import SwiftUI
 import CryptoKit
+import CoreFoundation
 
 struct KayfabeMainView: View {
     @State var lastDecryptedCiphertext = "(none)"
-    @State var b64Plaintext = ""
     @State var crypt = KayfabeCryptViewModel()
-    @State var plaintext = "" {
-        didSet {
-            print("Changed plaintext")
-            changed += 1
-        }
-    }
+    @State var plaintext = ""
     @State var nonce: ChaChaPoly.Nonce = ChaChaPoly.Nonce()
     @State var nonceStr = "(none)"
     @State var tag = ""
     @State var ciphertext = ""
-    @State var changed = 0
     let key = SymmetricKey(size: .bits256)
+    var maxLen = 4;
     
     func generateCiphertext() -> ChaChaPoly.SealedBox {
-        ciphertext = "Encrypted " + plaintext
-        var pt = generatePlaintext()
-        let box = try! ChaChaPoly.seal(pt, using: key, nonce: nil)
-        return box
-//        let tag = box.tag
-//        let nonce = box.nonce
-//        let out = box.ciphertext
-//        let tag64 = out.base64EncodedString()
-    }
+        let pt = generatePlaintext()
+        return try! ChaChaPoly.seal(pt, using: key, nonce: nil)    }
     
     func generatePlaintext() -> Data {
         var str = plaintext
-        if (str.count > 4) {
-            str = String(str[...str.index(str.startIndex, offsetBy: 3)])
+        if (str.count > crypt.maxLen) {
+            str = String(str[...str.index(str.startIndex, offsetBy: crypt.maxLen - 1)])
         }
         return str.data(using: .ascii)!
     }
     
     func updateCiphertext() {
         let s = String(plaintext).data(using:.ascii)
-        b64Plaintext = s!.base64EncodedString()
         let box = generateCiphertext()
         tag = box.tag.base64EncodedString()
         nonce = box.nonce
         nonceStr = "(automatically generated)"
         ciphertext = box.ciphertext.base64EncodedString()
-        let outbox = try! ChaChaPoly.open(box, using: key)
-        print(outbox)
-        print(outbox.base64EncodedString())
     }
     
     func attemptDecryption() {
@@ -84,16 +66,21 @@ struct KayfabeMainView: View {
     var body: some View {
         VStack {
             HStack {
-                Text("Input:")
-                TextField("Input string", text: $plaintext)
-                    .onChange(of: plaintext) {
-                        changed += 1
-                        updateCiphertext()
-                    }
+                Text("As you type in the input field below, the app will automatically encrypt the plaintext using a key stored locally. Touch the Decrypt button to decrypt it. Can you successfully instrument the app to decrypt the entire input string?")
             }
             HStack {
-                Text("B64 input:")
-                TextField("B64", text: $b64Plaintext)
+                Text("Input:")
+                if #available(iOS 17.0, *) {
+                    TextField("Input string", text: $plaintext)
+                        .onChange(of: plaintext) {
+                            updateCiphertext()
+                        }
+                } else {
+                    TextField("Input string", text: $plaintext)
+                        .onChange(of: plaintext) { thing in
+                            updateCiphertext()
+                        }
+                }
             }
             HStack {
                 Text("Ciphertext:")
@@ -107,12 +94,7 @@ struct KayfabeMainView: View {
                 Text("Tag:")
                 TextField("Input string", text: $tag)
             }
-            HStack {
-                Text("N changes:")
-                Text("\(changed)")
-            }
             Button {
-                print("Text 1 is \(plaintext) and text 2 is \(ciphertext)")
                 attemptDecryption()
             } label: {
                 Text("Decrypt")
